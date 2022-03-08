@@ -1,0 +1,60 @@
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container-fluid">
+    
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+
+            {% if active_page == "index" %}
+            
+            <li class="nav-item active"><a href="/" class="nav-link">Ana Sayfa</a></li>
+
+            {% else %}
+
+            <li class="nav-item "><a href="/" class="nav-link">Ana Sayfa</a></li>
+            
+            {% endif %}
+            
+
+            {% if active_page == "about" %}
+
+            <li class="nav-item active"><a href="/about" class="nav-link">Hakkımda</a></li>
+
+            {% else %}
+
+            <li class="nav-item"><a href="/about" class="nav-link">Hakkımda</a></li>
+      
+            {% endif %}
+            
+            {% if active_page == "appointment" %}
+
+            <li class="nav-item active"><a href="/appointment" class="nav-link">Randevu Al</a></li>
+
+            {% else %}
+            
+            <li class="nav-item"><a href="/appointment" class="nav-link">Randevu Al</a></li>
+      
+            {% endif %}
+            
+
+            {% if active_page == "contact" %}
+
+            <li class="nav-item active"><a href="/contact" class="nav-link">İLETİŞİM</a></li>
+
+            {% else %}
+            
+            <li class="nav-item"><a href="/contact" class="nav-link">İLETİŞİM</a></li>
+      
+            {% endif %}
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- END nav -->
+
